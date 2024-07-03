@@ -1,0 +1,461 @@
+<html>
+    <head>
+        <style>
+         .formstyle{
+            width:380px;
+            height: 400px;
+          border: 2px solid black;
+            margin:auto;
+            border-radius: 8px;
+            background-color: beige;
+            margin-top: 6%;
+            
+
+
+        }
+        .form{
+            width: 100%;
+            height:100%;
+            background-color:#fbf491;
+            position: fixed;
+            top:auto;
+        }
+        #A100:hover{
+            color:green;
+
+        }
+        .formstyle1{
+        
+          margin-left: 10px;
+
+
+h1{
+    margin-left: 40px;
+}
+#AB100{
+    color:red;
+    cursor:pointer;
+}
+#AB100:hover{
+    color:green;
+    font-size: 22px;
+    font-weight: 800;
+    font-style: bold;
+    cursor:pointer;
+}
+
+        }
+        input{
+            padding-left: 10px;
+        }
+        #A100
+        {
+             margin-left: 70px;
+             font-weight: 700;
+             
+        }
+        #A100:hover,#A101:hover,#A102:hover,#A103:hover,#A104:hover,#A105:hover{
+        background-color: #faf16e;
+        font-weight: 700;
+        }
+
+        #A101
+        {
+             margin-left: 29px;
+              font-weight: 700;
+        }
+        #A102
+        {
+             margin-left: 23px;
+              font-weight: 700;
+        }
+        #A103
+        {
+             margin-left: 95px;
+              font-weight: 700;
+        }
+        #A104
+        {
+             margin-left: 47px;
+              font-weight: 700;
+        }
+        #A105
+        {
+             margin-left: 63px;
+              font-weight: 700;
+        }
+        #A106
+        {
+             margin-left: 32%;
+             height:7.5%;
+             width: 50%;
+             
+        }
+        #A106:hover{
+        background-color:#f1e85f;
+        color:red;
+        font-size: 13px;
+        font-weight: 700;
+
+        }
+        #A107:hover{
+        background-color:#f1e85f;
+        color:red;
+        font-size: 16px;
+        font-weight: 700;
+
+        }
+        #A1077:hover{
+        background-color:#f1e85f;
+        color:red;
+        font-size: 16px;
+        font-weight: 700;
+
+        }
+    
+
+        #A107
+        {
+             margin-left: 37.5%;
+             height:7.5%;
+             width: 50%;
+        }
+
+        #A1077
+        {
+            margin-left: 47.3%;
+             height:7.5%;
+             width: 50%;
+             margin-top: -20px;
+             
+        }
+        #A108
+        {
+             margin-left: 79px;
+        }
+        #A109
+        {
+             margin-left: 57px;
+        }
+        #A110
+        {
+             margin-left: 53px;
+        }
+        #A111
+        {
+             margin-left: 80px;
+        }
+        #A112
+        {
+             margin-left: 30px;
+             
+        }
+        
+        #A113
+        {
+             margin-left: 100px;
+             height:8%;
+             width:25%;
+             border: 2px solid black;
+             background-color: aqua;
+             border-radius: 8px;
+             cursor: pointer;
+             font-size: 15px;
+             font-weight: 700;
+             
+        }
+        #A113:hover{
+            background-color:#faf16e;
+            font-size: 15px;
+            font-weight: 700;
+            transform: scale(1.2);
+            color:red;
+            
+        }
+        #A114
+        {
+             margin-left: 30px;
+             height:8%;
+             width:25%;
+             border: 2px solid black;
+             background-color:#faf16e;
+             border-radius: 8px;
+             cursor: pointer;
+             font-size: 15px;
+            font-weight: 700;
+        }
+        #A114:hover{
+            background-color: aqua;
+            font-size: 15px;
+            font-weight: 700;
+            transform: scale(1.2);
+            color:red;
+
+        }
+        #ABC:hover{
+            color:green;
+            font-size: 20px;
+            font-weight: 700;
+            transform: scale(1.2);
+            
+        }
+
+
+
+        </style>
+    </head>
+    <body>
+<script>
+    var subObj = {
+"India": {
+          "Uttar Pradesh": ["Ghazipur", "Balia", "Banaras","Meeruth"," Moradabad",
+            "Kanpur" ,"Allahabad","Locknow","Unnao", "Farrukhabad", "Azamgragh", 
+            "jaunpur", "Mau", "Gorakhpur","Jhasi"],
+            
+          "Heryana": ["Gurugram", "Ambala", "Bhiwani", "Hisar", "Fatehabad", 
+                      "Faridabad", "Charkhi-Dadri", "Jhajjar", "Jind", "Kernal" ,
+                      "Kurukshetra", "palwal", "Panipat", "Sonipat"],
+    
+          "Punjab": ["Amritsar", "Patyala", "Jlandhara", "Kapurthala", "Ludhiyana",
+                        "Moga", "Rupnagar", "Pathankot", "Gurudapur", "Fazilka fathgarh", "sahib", 
+                        "Pulwama"],
+    
+          " Aasam " :["Chirang","Udal guri","Majhuli","Nagaon","Siva sagar","Darang","kamroop","Lakhimpur"
+                      ,"Nalwari","Snitput","Golaghat"],
+
+           "Tamilnadu" :["Nilgiri","Krishnagir","Dharmapuri","Kakur","Thenii","Salim"
+                         ,"Virudhnagar","Erod","Chengalpattu","Coimbatore","Trivanamalani"],
+               
+            "Andhra Pradesh" :["Anatpur","Kurnool","Nillore","Gonture","prakasham","Nandyal",
+                               "Krishna","East Godaveri","Shree kakulam","vizianagarm","Eluru"],
+            "Chattisgarh" :["Bilaspur","Dantewada","Durg","Kanker"
+                           ,"Balrampur","Gajdalpur","Buster","Kheragragh","Ondagav",
+                           "Raipur"],
+
+            "Kernatka" :["angluru","Olar","Bidar","Billari","Haveri","Gadag","Hassan",
+                         "Dharwad","Dakshina" ,"Kannada","Vijaypura"],   
+            
+            "Kerala" :["Triventpuram","kanur","Ernakulam","Idukki","Palakkad","malappuram"
+                        ,"Kollam","Thrissur","Kozhikod","KasarKod","Pathnamthita"],
+                
+           "Maharashtra" :["Nagpur","Ahamd nagar","Mumbai","Amravati","Chandrapur",
+                           "Buldahana","Himgoli","Palghar","Ratanagiri" ,"Beed,Gondia",
+                            "Kolhapur","Arungabad"],
+
+            "Manipur " :["Bisnupur","Chandel","Churachandpoor","Imphal"
+                          ,"jiribam", "kapching","kamjong","Senapti","Noney","Ukhrul",
+                          "Thuobal"],
+                
+           "Meghalaya" :["East garo Hills","East jantia Hills","East khasi Hills",
+                          "South west garo hills","South West khsi Hills"],
+
+            "Mizoram " :["Mamit Lunglei","Lawngtlei","Kolasiv","Khawzawlwn"
+                         ,"Chaphai","Hanahthial","Siaha","Saitual","Serchhip"],
+
+            "Nagaland" :["Dimapur", "KohiMa", "Launglen" ,"Mon", "Noklak", "Wokha"
+                         , "Pheka" ,"perun" ,"Niwland" ,"Mokangchung", "Kiphire"],
+
+            " Sikkim" :["Gangtok Gajing","Magan","Namchi","East Sikkim","West Sikkim"
+                    ],
+            
+            "Tripura " :["Agertala", "North Tripura" ,"South Tripura","West Tripura",
+                        "Dhalai", "Unakoti" ,"Khowai", "Gomti & Sephaijala"],
+            
+            "Goa":["North Goa", "South Goa"],
+            
+            "Orisha" :["Bhunswer","Puri","Anandpur","Baudh","Gajapati","Balangir",
+                       "Cuttack","Bargarh","Khordha","ganjam","Devagher" ,"Gajatsingpur"]
+            
+  },
+
+  "Pakistan": {
+         "Azad Kasmir": ["Bagh", "Haveli", "Kotli","Mirpur","Bhimbarv "],
+         "Punjab": ["Gujrat", "Hafizabad", "Jhelam","Attok","Wazirabad"],
+         "Sindh": ["Sukkur", "Kherpur", "Sojawal","Badin","Bhotki"],
+         "Balochistan": ["Kharam", "Chagai", "Sivi","Kachhi","Washuk"]
+  },
+  "Afganistan": {
+         "Helmand": ["Baghran", "Wa-sher", "Deh shu"],
+         "Badghis": ["Arghanj khwa", "Jurm", "Darwaz"],
+         "Baghlan": ["Andaarab", "Deh Salah", "Khenjan"],
+         "Kabul Provinc": ["Bagrami", "Farza", "Khak-e-Jabbar"]
+  },
+  "Nepal":{
+
+           "Karnali":["Dolpa","Mugu","jumla"],
+           "Lumbni":["Bardiya","Rolpa","Palpa"],
+           "Koshi":["Rsuwa","Nuwakpt","Lalitpur"],
+           "Madesh":["Parsa","Bara","Siraha"]
+  }
+
+
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("A106");
+  var topicSel = document.getElementById("A107");
+  var chapterSel = document.getElementById("A1077");
+  for (var x in subObj) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subObj[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+    }
+  }
+  topicSel.onchange = function() {
+    //empty Chapters dropdown
+    chapterSel.length = 1;
+    //display correct values
+    var z = subObj[subjectSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
+
+     function myFunction()
+     {
+        
+        const Aname= document.getElementById("A100").value;
+        const Fname= document.getElementById("A101").value;
+        const Mname= document.getElementById("A102").value;
+        const Iname= document.getElementById("A103").value;
+        const Pname= document.getElementById("A104").value;
+        const Gname= document.getElementById("A105").value;
+        const Cname= document.getElementById("A106").value;
+        const Sname= document.getElementById("A107").value;
+        const Dname= document.getElementById("A1077").value;
+        let Gender= null;
+      let text="Please Fill all the Fields \n Thank You";
+
+       
+
+        
+
+        
+
+            var getSelectedValue = document.querySelector('input[name="season"]:checked'); 
+              
+            
+         
+    
+            
+    
+    
+
+    
+     
+    
+                
+         if(getSelectedValue == null||Aname ==""||Fname ==""||
+            Mname ==""|| Iname ==''|| Pname ==''|| Gname ==""|| 
+            Cname ==''|| Sname ==''|| Dname =='')
+             
+            
+             { 
+                alert(text );
+                
+            }       
+     
+                else{
+                    Gender=getSelectedValue.value;
+                document.write("Applicant name::"+Aname+ "<br>");
+                document.write(" Father name::"+Fname+ "<br>");    
+                document.write("\n Mother name::"+Mname+ "<br>");
+                document.write("Applicant Id::"+Iname+ "<br>");
+                document.write("Applicant pass::"+Pname+ "<br>");
+                document.write("Applicant Gmail::"+Gname+ "<br>");
+                document.write("Countery name::"+Cname+ "<br>");
+                document.write("State  name::"+Sname+ "<br>");
+                document.write("District name::"+Dname+ "<br>");
+                document.write("Gender is::"+Gender+ "<br>");
+            } 
+        }
+     
+
+
+
+    </script>
+
+
+
+<div class="form">
+        <div class=" formstyle">
+            <div class=" formstyle1">
+            
+            <h1 id="AB100">!!Personal Details!! </h1>
+        
+
+
+        <form> 
+        <label for="name" id="ABC12" > Enter the Name</label> 
+        <input type="text" name="name" id="A100" value="" style="text-transform: capitalize;"><br>
+        <label  for="name"> Enter the Father name</label> 
+        <input type="text" name="name" value="" id="A101" style="text-transform: capitalize;"><br>
+        <label > Enter the Mother name</label> 
+        <input type="text" name="name" id="A102" style="text-transform: capitalize;" ><br>
+        <label > Enter the Id</label> 
+
+        <input type="verchar" name="id" id="A103" minlength="6" maxlength="8" ><br>
+        <label > Enter the Password</label> 
+        <input type="password" name="enter name" id="A104" minlength="6" maxlength="10" ><br>
+        <label > Enter the G-mail</label> 
+        <input type="email" name="gmail" id="A105" ><br>
+
+
+
+        <label >Country</label> 
+        <select name="A106"  id="A106" >
+            <option  value=""  id=" AB106" selected="selected">Please Select Country First</option>
+            </select>
+            <br>
+
+        <label > State</label>
+        <select  name="A107" id="A107">
+            <option  value="" selected="selected">Please Select State First </option>
+            </select>
+            
+
+        
+        <label >District</label> <select  name="A1077" id="A1077">
+            <option value="" selected="selected">Please Select District First </option>
+        </select>
+
+        
+       
+        <label > Choose Gender</label> 
+        
+        
+        <input type="radio" id="A111"  name="season" value="Male"  />
+    <label for="A111"   id="ABC">Male</label>
+    
+    <input type="radio" value="Female"  name="season" id="A112" >
+        <label for="A112"   id="ABC">Female</label>
+        
+        <br><br>
+        
+        <input type="submit" value="Submit" id="A113"  onclick="myFunction()">
+
+      
+        <input type="reset" value="Reset" id="A114" ><br>
+             
+    </div>
+<p id="AB11" style="color:red"></p>
+<p id="AB12" style="color:blue"></p>
+</div>
+
+    <br>
+    <br>
+</form>
+
+
+
+
+</div>
+
+</body>
+</html>
